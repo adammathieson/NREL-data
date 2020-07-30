@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-// import { gameReducer } from './game'
+import { solarDataReducer } from './solarDataReducer'
 
 export default combineReducers({
-    // gameReducer,
+    solarDataReducer
 })
