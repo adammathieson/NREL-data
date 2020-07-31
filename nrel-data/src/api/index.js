@@ -4,9 +4,6 @@ const { REACT_APP_NREL_API_KEY, REACT_APP_BASE_URL } = process.env
 
 const axiosConfig = {
     // baseURL: REACT_APP_BASE_URL,
-    proxy: {
-
-    }
 }
 // console.log( REACT_APP_BASE_URL)
 const requestWithAuth = () => {
@@ -22,7 +19,7 @@ const requestWithAuth = () => {
 
 export const getSolarData = async coord => {
     const { data } = await requestWithAuth()
-        .get(`api/solar/solar_resource/v1.json/`, {
+        .get('api/solar/solar_resource/v1.json/', {
             params: {
                 lat: coord.lat, 
                 lon: coord.lon 
