@@ -30,8 +30,8 @@ export const getSolarData = async coord => {
 }
 
 
-let temp = {
-    lat: 40,
-    lon: -105
-}
-getSolarData(temp)
+// let temp = {
+//     lat: 40,
+//     lon: -105
+// }
+// getSolarData(temp)
